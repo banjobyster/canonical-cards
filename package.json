@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "sass -w --load-path=node_modules src:dist --style=compressed",
-    "watch-css": "yarn build-css && sass --load-path=node_modules -w src:dist --style=compressed"
+    "build-css": "sass --load-path=node_modules src:dist --style=compressed",
+    "watch-css": "sass -w --load-path=node_modules src:dist --style=compressed",
+    "predeploy": "yarn build-css",
+    "deploy": "gh-pages -d ."
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/banjobyster/canonical-cards#readme",
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "sass": "^1.66.1",
     "vanilla-framework": "^4.2.0"
   }
