@@ -1,0 +1,32 @@
+@import "../node_modules/vanilla-framework/";
+@include vanilla;
+
+.card-container {
+  margin-top: 20px;
+}
+
+.p-card--highlighted {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  border-radius: 2px;
+
+  &__header {
+    border-radius: 2px;
+    border-top: 3px solid #a87ca0;
+    padding: 16px 16px 8px 16px;
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding: 16px 8px 8px 8px;
+    margin: 0px 8px;
+    border-top: 1px dotted #d9d9d9;
+  }
+
+  &__footer {
+    padding: 16px 8px;
+    margin: 0px 8px;
+    border-top: 1px dotted #d9d9d9;
+  }
+}

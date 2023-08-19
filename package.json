@@ -1,0 +1,26 @@
+{
+  "name": "canonical-cards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass -w --load-path=node_modules src:dist --style=compressed",
+    "watch-css": "yarn build-css && sass --load-path=node_modules -w src:dist --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banjobyster/canonical-cards.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/banjobyster/canonical-cards/issues"
+  },
+  "homepage": "https://github.com/banjobyster/canonical-cards#readme",
+  "dependencies": {
+    "sass": "^1.66.1",
+    "vanilla-framework": "^4.2.0"
+  }
+}
